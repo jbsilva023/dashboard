@@ -21,5 +21,9 @@ export class ProdutosService {
   getProdutos() {
     return this.produtos;
   }
+
+  get(produto_id: number) {
+    return {};
+  }
   constructor() { }
 }
