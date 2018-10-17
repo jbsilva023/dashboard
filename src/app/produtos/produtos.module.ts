@@ -1,3 +1,4 @@
+import { CustomMaterializeModuleModule } from './../custom-materialize-module/custom-materialize-module.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -15,7 +16,8 @@ import { ProdutosRoutingModule } from './produtos.routing.module';
     CommonModule,
     FormsModule,
     HttpModule,
-    ProdutosRoutingModule
+    ProdutosRoutingModule,
+    CustomMaterializeModuleModule
   ],
   declarations: [
     ProdutosComponent,

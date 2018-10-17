@@ -8,6 +8,7 @@ import { ProdutosModule } from './produtos/produtos.module';
 import { AppRoutingModule } from './app.routing.module';
 import { ProdutosRoutingModule } from './produtos/produtos.routing.module';
 import { CategoriasRoutingModule } from './categorias/categorias.routing.module';
+import { CustomMaterializeModuleModule } from './custom-materialize-module/custom-materialize-module.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CategoriasRoutingModule } from './categorias/categorias.routing.module'
   imports: [
     BrowserModule,
     UiModule,
+    CustomMaterializeModuleModule,
     ProdutosModule,
     CategoriasModule,
     AppRoutingModule,

@@ -1,10 +1,8 @@
-<nav>
-  <div class="nav-wrapper light-blue darken-3">
-    <a  class="brand-logo right">Logo</a>
-    <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <li><a routerLink="/produtos" routerLinkActive="active">Produtos</a></li>
-      <li><a routerLink="/categorias" routerLinkActive="active">Categorias</a></li>
-      <li><a >JavaScript</a></li>
-    </ul>
-  </div>
-</nav>
+<mz-navbar [navbarClass]="'blue'">
+  <a routerLink="" class="brand-logo">Logo</a>
+  <mz-navbar-item-container [align]="'right'">
+    <mz-navbar-item><a routerLink="/produtos" [routerLinkActive]="'active'">Produtos</a></mz-navbar-item>
+    <mz-navbar-item><a routerLink="/categorias" [routerLinkActive]="'active'">Categorias</a></mz-navbar-item>
+    <mz-navbar-item><a routerLink="#" [routerLinkActive]="'active'">JavaScript</a></mz-navbar-item>
+  </mz-navbar-item-container>
+</mz-navbar>

@@ -1,3 +1,4 @@
+import { CustomMaterializeModuleModule } from './../custom-materialize-module/custom-materialize-module.module';
 import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
@@ -11,6 +12,7 @@ import { AppRoutingModule } from './../app.routing.module';
   imports: [
     CommonModule,
     ProdutosModule,
+    CustomMaterializeModuleModule,
     AppRoutingModule
   ],
   declarations: [HeaderComponent, FooterComponent, LayoutComponent],
