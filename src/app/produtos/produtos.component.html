@@ -5,7 +5,7 @@
     <h3>Produtos</h3>
   </mz-card-title>
   <mz-card-content>
-      <button mz-button mz-halfway-fab [float]="true" [large]="true" routerLink="novo">
+      <button mz-button mz-halfway-fab [float]="true" [large]="true" routerLink="novo" class="cyan darken-4 pulse">
           <i mz-icon [icon]="'add'" [align]="left"></i>
       </button>
 
@@ -16,7 +16,7 @@
                 <th>Nome</th>
                 <th>Preço</th>
                 <th>Descrição</th>
-                <th>Data Inc</th>
+                <th>Dt inclusão</th>
                 <th>Ações</th>
             </tr>
           </thead>
@@ -29,13 +29,37 @@
               <td>{{ produto.descricao }}</td>
               <td>{{ produto.data_inc }}</td>
               <td>
-                <button mz-button [float]="true" [large]="true" class="red">
+                <!--button mz-button [float]="true" [large]="true" class="red">
                     <i mz-icon [icon]="'delete'"></i>
                 </button>
                 &nbsp;
                 <button mz-button [float]="true" [large]="true" class="blue" routerLink="{{ produto.produto_id }}">
                     <i mz-icon [icon]="'mode_edit'"></i>
-                </button>
+                </button-->
+                <mz-dropdown
+                  [id]="'dropdown-demo'"
+                  [align]="'left'"
+                  [belowOrigin]="false"
+                  [constrainWidth]="true"
+                  [dropdownButtonId]="'btn-dropdown-demo'"
+                  [gutter]="true"
+                  [hover]="true"
+                  [inDuration]="300"
+                  [outDuration]="300"
+                  [stopPropagation]="true"
+                >
+                  <mz-dropdown-item><a routerLink="{{ produto.produto_id }}/editar">Editar</a></mz-dropdown-item>
+                  <mz-dropdown-divider></mz-dropdown-divider>
+                  <mz-dropdown-item><a routerLink="{{ produto.produto_id }}">Deletar</a></mz-dropdown-item>
+                </mz-dropdown>
+
+                <a mz-button mz-halfway-fab [float]="true" id="btn-dropdown-demo" class="cyan darken-4">
+                  <i mz-icon
+                    [align]="'right'"
+                    [icon]="'arrow_drop_down'"
+                    [size]="'medium'">
+                  </i>
+                </a>
               </td>
             </tr>
           </tbody>
