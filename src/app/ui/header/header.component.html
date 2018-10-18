@@ -1,8 +1,14 @@
-<mz-navbar [navbarClass]="'cyan darken-4'">
-  <a routerLink="" class="brand-logo right">Logo</a>
-  <mz-navbar-item-container [align]="'left'">
+<mz-navbar [navbarClass]="'cyan darken-1'">
+  <button mz-button id="btn-sidenav-demo" class="cyan darken-1 white-text"
+  [flat]="'false'" 
+  [large]="'true'">
+      <i mz-icon [icon]="'menu'"></i>
+  </button>
+
+  <a routerLink="/" class="brand-logo">Logo</a>
+  <!--mz-navbar-item-container [align]="'right'">
     <mz-navbar-item><a routerLink="/produtos" [routerLinkActive]="'active'">Produtos</a></mz-navbar-item>
     <mz-navbar-item><a routerLink="/categorias" [routerLinkActive]="'active'">Categorias</a></mz-navbar-item>
     <mz-navbar-item><a routerLink="#" [routerLinkActive]="'active'">JavaScript</a></mz-navbar-item>
-  </mz-navbar-item-container>
+  </mz-navbar-item-container-->
 </mz-navbar>

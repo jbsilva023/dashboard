@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
 import { ProdutosModule } from './../produtos/produtos.module';
 import { AppRoutingModule } from './../app.routing.module';
+import { MenuLateralComponent } from './menu-lateral/menu-lateral.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { AppRoutingModule } from './../app.routing.module';
     CustomMaterializeModuleModule,
     AppRoutingModule
   ],
-  declarations: [HeaderComponent, FooterComponent, LayoutComponent],
-  exports: [HeaderComponent, FooterComponent, LayoutComponent]
+  declarations: [HeaderComponent, FooterComponent, LayoutComponent, MenuLateralComponent],
+  exports: [HeaderComponent, FooterComponent, LayoutComponent, MenuLateralComponent]
 })
 export class UiModule { }
