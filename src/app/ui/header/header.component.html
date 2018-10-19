@@ -1,14 +1,43 @@
-<mz-navbar [navbarClass]="'cyan darken-1'">
-  <button mz-button id="btn-sidenav-demo" class="cyan darken-1 white-text"
+<mz-navbar [navbarClass]="'cyan darken-4'">
+  <button mz-button id="btn-sidenav-demo" class="cyan darken-4 white-text"
   [flat]="'false'" 
   [large]="'true'">
       <i mz-icon [icon]="'menu'"></i>
   </button>
 
   <a routerLink="/" class="brand-logo">Logo</a>
-  <!--mz-navbar-item-container [align]="'right'">
-    <mz-navbar-item><a routerLink="/produtos" [routerLinkActive]="'active'">Produtos</a></mz-navbar-item>
+  
+  <mz-navbar-item-container [align]="'right'">
+    <mz-navbar-item>
+    <a mz-button mz-halfway-fab [flat]="true" id="btn-dropdown-demo" class="cyan darken-4 white-text">    
+      <i mz-icon
+            [align]="'right'"
+            [icon]="'arrow_drop_down'"
+            [size]="'medium'">
+          </i>
+        </a>
+    </mz-navbar-item>
+    
+    <!--mz-navbar-item><a routerLink="/produtos" [routerLinkActive]="'active'">Produtos</a></mz-navbar-item>
     <mz-navbar-item><a routerLink="/categorias" [routerLinkActive]="'active'">Categorias</a></mz-navbar-item>
-    <mz-navbar-item><a routerLink="#" [routerLinkActive]="'active'">JavaScript</a></mz-navbar-item>
-  </mz-navbar-item-container-->
+    <mz-navbar-item><a routerLink="#" [routerLinkActive]="'active'">JavaScript</a></mz-navbar-item-->
+  </mz-navbar-item-container>
 </mz-navbar>
+
+<mz-dropdown
+  [id]="'dropdown-demo'"
+  [align]="'left'"
+  [belowOrigin]="false"
+  [constrainWidth]="true"
+  [dropdownButtonId]="'btn-dropdown-demo'"
+  [gutter]="true"
+  [hover]="true"
+  [inDuration]="300"
+  [outDuration]="300"
+  [stopPropagation]="true">
+  <mz-dropdown-item><a routerLink="">Perfil</a></mz-dropdown-item>
+  <mz-dropdown-divider></mz-dropdown-divider>
+  <mz-dropdown-item><a routerLink="">Sair</a></mz-dropdown-item>
+</mz-dropdown>
+
+                

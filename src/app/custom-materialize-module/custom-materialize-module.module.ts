@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MzInputModule, MzValidationModule,  MzCardModule, MzButtonModule,
-  MzIconModule, MzNavbarModule, MzDropdownModule, MzModalModule, MzSidenavModule } from 'ngx-materialize';
+  MzIconModule, MzNavbarModule, MzDropdownModule, MzModalModule,
+  MzSidenavModule, MzPaginationModule, MzTooltipModule } from 'ngx-materialize';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -16,7 +17,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MzNavbarModule,
     MzDropdownModule,
     MzModalModule,
-    MzSidenavModule
+    MzSidenavModule,
+    MzPaginationModule,
+    MzTooltipModule
   ],
   exports: [
     MzCardModule,
@@ -28,7 +31,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MzNavbarModule,
     MzDropdownModule,
     MzModalModule,
-    MzSidenavModule
+    MzSidenavModule,
+    MzPaginationModule,
+    MzTooltipModule
   ],
   declarations: []
 })
