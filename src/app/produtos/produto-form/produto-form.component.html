@@ -1,3 +1,147 @@
-<p>
-  produto-form works!
-</p>
+<mz-card
+  [horizontal]="true"
+  [hoverable]="true">
+  <mz-card-title>
+    <h3>Cadastrar novo produto</h3>
+  </mz-card-title>
+  <mz-card-content>
+    <div class="conteiner">
+      
+      <div class="row">
+        <div class="col s12 m6">
+          <mz-select-container>
+            <select mz-select
+              id="options-select"
+              [label]="'Marca'"
+              [placeholder]="'Selcione uma marca'"
+              [class]="'input-field'"
+            >
+              <optgroup label="Group 1">
+                <option data-icon="" class="left circle">Option 1</option>
+                <option data-icon="" class="left circle">Option 2</option>
+              </optgroup>
+              <optgroup label="Group 2">
+                <option data-icon="" class="left circle">Option 3</option>
+              </optgroup>
+            </select>
+          </mz-select-container>
+        </div>
+        
+        <div class="col s12 m6">
+          <mz-select-container>
+              <select mz-select
+                id="options-select"
+                [label]="'Categoria'"
+                [placeholder]="'Selcione uma categoria'"
+                [class]="'input-field'"
+              >
+                <optgroup label="Group 1">
+                  <option data-icon="" class="left circle">Option 1</option>
+                  <option data-icon="" class="left circle">Option 2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                  <option data-icon="" class="left circle">Option 3</option>
+                </optgroup>
+              </select>
+            </mz-select-container>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m6">
+            <mz-input-container>
+              <input mz-input
+                [label]="'Nome'"
+                [validate]="true"
+                [dataError]="'Nome inválido'"
+                [dataSuccess]="'Nome válido'"
+                [class]="'input-field'"
+                id="nome-input"
+                placeholder="Entre com o nome do produto"
+                length="150"
+                type="text">
+            </mz-input-container>
+          </div>
+
+          <div class="col s12 m6">
+              <mz-input-container>
+                <input mz-input
+                  [label]="'Código'"
+                  [validate]="true"
+                  [dataError]="'Código inválido'"
+                  [dataSuccess]="'Código válido'"
+                  [class]="'input-field'"
+                  id="codigo-input"
+                  placeholder="Entre com o código do produto"
+                  length="150"
+                  type="text">
+              </mz-input-container>
+            </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col s12 m6">
+            <mz-input-container>
+              <input mz-input
+                [label]="'Peso'"
+                [validate]="true"
+                [dataError]="'Peso inválido'"
+                [dataSuccess]="'Peso é válido'"
+                [class]="'input-field'"
+                id="peso-input"
+                placeholder="Entre com o peso do produto"
+                [step]="'0.001'"
+                [min]="'0'"
+                [max]="'9.999'"
+                type="number">
+            </mz-input-container>
+          </div>
+  
+          <div class="col s12 m6">
+            <mz-select-container>
+                <select mz-select
+                  id="options-select"
+                  [label]="'Stauts'"
+                  [placeholder]="'Selcione um status'"
+                  [class]="'input-field'"
+                >
+                  <option data-icon="" class="left circle">Ativo</option>
+                  <option data-icon="" class="left circle">Inativo</option>
+                </select>
+              </mz-select-container>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m6">
+              <mz-textarea-container>
+                <textarea mz-textarea
+                  [label]="'Descrição'"
+                  id="comment-textarea"
+                  placeholder="Entre com a descrição do produto"
+                  length="150"></textarea>
+              </mz-textarea-container>
+          </div>
+        </div>
+
+      </div>
+    <mz-card-action>
+      <button mz-button>
+        <i mz-icon 
+          [align]="'right'" 
+          [icon]="'save'"
+          ></i>
+          Salvar
+      </button>
+      &nbsp;
+      <button mz-button class="red">
+        <i mz-icon 
+          [align]="'right'" 
+          [icon]="'cancel'"
+          ></i>
+          cancelar
+      </button>      
+    </mz-card-action>
+  </mz-card-content>
+</mz-card>

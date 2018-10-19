@@ -6,14 +6,23 @@
   </mz-card-title>
   <mz-card-content-->
       <h3>Produtos</h3>
-      <button mz-button mz-halfway-fab  mz-tooltip class="cyan darken-4 pulse" 
+      <!--button mz-button mz-halfway-fab  mz-tooltip class="cyan darken-4 pulse" 
       (click)="bottomSheetModal.openModal()"
         [float]="true" 
         [large]="false"
         [tooltip]="'Cadastrar novo produto'"
       >
           <i mz-icon [icon]="'add'" [align]="left"></i>
-      </button>
+      </button-->
+
+      <a mz-button mz-halfway-fab  mz-tooltip class="cyan darken-4 pulse" 
+        routerLink="/produto/novo"
+        [float]="true" 
+        [large]="false"
+        [tooltip]="'Cadastrar novo produto'"
+      >
+          <i mz-icon [icon]="'add'" [align]="left"></i>
+      </a>
 
       <table class="responsive-table striped bordered">
           <thead>
@@ -35,21 +44,23 @@
               <td>{{ produto.descricao }}</td>
               <td>{{ produto.data_inc }}</td>
               <td>
-                  <button mz-button mz-tooltip mz-halfway-fab class="red"
+                  <a mz-button mz-tooltip mz-halfway-fab class="red"
+                    routerLink="/produto/{{ produto.produto_id }}"
                     [tooltip]="'Deletar'"
                     [float]="true">
                     <i mz-icon 
                       [align]="'centered'" 
                       [icon]="'delete'"></i>
-                  </button>
+                  </a>
                   &nbsp;
-                  <button mz-button mz-tooltip mz-halfway-fab class="cyan darken-4"
+                  <a mz-button mz-tooltip mz-halfway-fab class="cyan darken-4"
+                    routerLink="/produto/{{ produto.produto_id }}/editar"
                     [tooltip]="'Editar'"
                     [float]="true">
                     <i mz-icon 
                       [align]="'centered'" 
                       [icon]="'mode_edit'"></i> 
-                  </button>
+                </a>
 
               </td>
             </tr>
