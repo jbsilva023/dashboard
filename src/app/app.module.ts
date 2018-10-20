@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { ProdutosRoutingModule } from './produtos/produtos.routing.module';
 import { CategoriasRoutingModule } from './categorias/categorias.routing.module';
 import { CustomMaterializeModuleModule } from './custom-materialize-module/custom-materialize-module.module';
+import { MarcasModule } from './marcas/marcas.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CustomMaterializeModuleModule } from './custom-materialize-module/custo
     CategoriasModule,
     AppRoutingModule,
     ProdutosRoutingModule,
-    CategoriasRoutingModule
+    CategoriasRoutingModule,
+    MarcasModule
   ],
   providers: [],
   bootstrap: [AppComponent]

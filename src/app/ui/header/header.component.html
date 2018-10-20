@@ -1,11 +1,21 @@
 <mz-navbar [navbarClass]="'cyan darken-4'">
   <button mz-button id="btn-sidenav-demo" class="cyan darken-4 white-text"
-  [flat]="'false'" 
+  [flat]="'true'" 
   [large]="'true'">
-      <i mz-icon [icon]="'menu'"></i>
+      <i mz-icon-mdi 
+      [icon]="'menu'"
+      [align]="'center'"
+      [size]="'48px'"></i>
   </button>
 
-  <a routerLink="/" class="brand-logo">Logo</a>
+  <a routerLink="/" class="brand-logo">
+    <!--i mz-icon-mdi
+      [align]="'center'"
+      [icon]="'gamepad'"
+      [size]="'60px'">
+    </i-->
+    JBS Games
+  </a>
   
   <mz-navbar-item-container [align]="'right'">
     <mz-navbar-item>
@@ -13,7 +23,7 @@
       <i mz-icon
             [align]="'right'"
             [icon]="'arrow_drop_down'"
-            [size]="'medium'">
+            [size]="'large'">
           </i>
         </a>
     </mz-navbar-item>

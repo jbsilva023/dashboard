@@ -2,37 +2,37 @@
   [horizontal]="true"
   [hoverable]="true">
   <mz-card-title>
-    <h3>Cadastrar novo produto</h3>
+    <h5>Cadastrar novo produto</h5>
+    <div class="divider"></div>
   </mz-card-title>
   <mz-card-content>
-    <div class="conteiner">
-      
-      <div class="row">
-        <div class="col s12 m6">
-          <mz-select-container>
-            <select mz-select
-              id="options-select"
-              [label]="'Marca'"
-              [placeholder]="'Selcione uma marca'"
-              [class]="'input-field'"
-            >
-              <optgroup label="Group 1">
-                <option data-icon="" class="left circle">Option 1</option>
-                <option data-icon="" class="left circle">Option 2</option>
-              </optgroup>
-              <optgroup label="Group 2">
-                <option data-icon="" class="left circle">Option 3</option>
-              </optgroup>
-            </select>
-          </mz-select-container>
-        </div>
-        
+    <div class="conteiner"> 
+      <div class="row">       
         <div class="col s12 m6">
           <mz-select-container>
               <select mz-select
                 id="options-select"
                 [label]="'Categoria'"
                 [placeholder]="'Selcione uma categoria'"
+                [class]="'input-field'"
+              >
+                <optgroup label="Group 1">
+                  <option data-icon="" class="left circle">Option 1</option>
+                  <option data-icon="" class="left circle">Option 2</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                  <option data-icon="" class="left circle">Option 3</option>
+                </optgroup>
+              </select>
+            </mz-select-container>
+          </div>
+        
+          <div class="col s12 m6">
+            <mz-select-container>
+              <select mz-select
+                id="options-select"
+                [label]="'Marca'"
+                [placeholder]="'Selcione uma marca'"
                 [class]="'input-field'"
               >
                 <optgroup label="Group 1">
